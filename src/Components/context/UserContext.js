@@ -5,6 +5,7 @@ import { getUser } from '../../services/Authentication';
 const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
+
   const currentUser = getUser();
   const [user, setUser] = useState(currentUser);
 

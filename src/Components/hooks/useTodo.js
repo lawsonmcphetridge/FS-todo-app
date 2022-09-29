@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { getAllTodos } from '../../services/todos';
 
 export default function useTodo() {
-  const [todo, setTodo] = useState();
+  const [todo, setTodo] = useState([]);
   useEffect(() => {
     const fetchTodos = async () => {
       try {
