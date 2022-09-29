@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from './context/UserContext';
 import { authUser } from '../services/Authentication';
+import '../Auth.css';
 export default function Auth() {
   const { type } = useParams();
   const [email, setEmail] = useState();
@@ -26,14 +27,14 @@ export default function Auth() {
   }
 
   return (
-    <div>
+    <div className='auth-coontainer'>
 
       Email:<input type="text" value={email} onChange={(e) => setEmail(e.target.value)} ></input>
 
 
 
       Password:<input type="text" value={password} onChange={(e) => setPassword(e.target.value)} ></input>
-      <button onClick={signUp}>Sign up!</button>
+      <button onClick={signUp}>Submit</button>
     </div>
   );
 }

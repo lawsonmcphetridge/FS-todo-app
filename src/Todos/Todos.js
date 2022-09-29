@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { UserContext } from '../Components/context/UserContext';
 import useTodo from '../Components/hooks/useTodo';
 import { addTodo } from '../services/todos';
+import './Todos.css';
 
 export default function Todos() {
   const [inputText, setInputText] = useState('');
@@ -29,10 +30,10 @@ export default function Todos() {
   
     
   return (
-    <div>
+    <div className='todos-container'>
           
-      <input type="text" value={inputText} onChange={(e) => setInputText(e.target.value)}></input>
-      <button onClick={handleClick}>add todo</button>
+      <input className='todo-input' type="text" value={inputText} onChange={(e) => setInputText(e.target.value)}></input>
+      <button className='todo-button' onClick={handleClick}>add todo</button>
           
       <div className='item-display'>{todo.map((todos) => (
         <div key={todos.id}>{todos.description}</div>

@@ -1,19 +1,9 @@
-.todos-container {
-    width: 100vw;
-    height: 100vh;
+.auth-coontainer {
     background-color: black;
     color: white;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
-
-.todo-button {
-margin: 5px;
-}
-
-.todo-input {
-margin: 5px;
 }
