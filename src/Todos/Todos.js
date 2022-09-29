@@ -45,5 +45,4 @@ export default function Todos() {
   );
 }
 
-//netlify fix
 
