@@ -12,9 +12,6 @@ export default function Auth() {
 
   const { user, setUser } = useContext(UserContext);
 
-  console.log(user);
-  
-  
   const signUp = async () => {
     const userData = await authUser(email, password, type);
     setUser(userData);
