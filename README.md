@@ -51,3 +51,40 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Additional considerations
 - Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
 - Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+
+
+*planning* 
+
+what components will I need?
+app js will look like header, route and a bunch of switches one route to auth/sign up page, one path to todo's
+##
+1) Header/Footer (footer for design) 
+What will these components need? header will have css, sign out button and  hello based on user
+##
+2) todo's display
+users will have an input thats adds todos into a array that displays all of them
+##
+3) auth.js
+check if there is a user, is there is no user display 
+##
+4) context to set global state for user
+in a context hook
+##
+5) services authentication.js in services and client.js which will make supabase url key
+put url key in development.local
+
+
+------------------------------------------------------------------------
+Current User passed throughout the application using Context	2
+Nav bar shows current user and logout when authenticated	2
+Nav bar shows links to sign in / sign up when not authenticated	2
+Users can sign up for an account	2
+Users can sign in to an existing account	2
+Auth page redirects to tasks if user already authenticated	2
+Tasks redirects to auth if user is not authenticated	2
+Authenticated users can log out	2
+Authenticated users see a list of their tasks	2
+Authenticated users can add new tasks	2
+Stretch - Authenticated users can complete tasks	+ 1
+Stretch - Authenticated users can delete tasks	+ 1
+------------------------------------------------------------------------
