@@ -10,6 +10,7 @@ export default function useTodo() {
         const data = await getAllTodos();
         setTodo(data);
       } catch (e) {
+          // eslint-disable-next-line no-console
         console.error(e.message);
       }
     };

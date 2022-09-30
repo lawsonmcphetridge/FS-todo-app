@@ -23,6 +23,7 @@ export default function Todos() {
         prevItems.map((prevItem) => (prevItem.id === item.id ? newTodo : prevItem))
       );
     } catch (e) {
+        // eslint-disable-next-line no-console
       console.error(e.message);
     }
   };
