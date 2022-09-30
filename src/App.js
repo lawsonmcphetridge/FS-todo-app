@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Components/Layout/Header/Header';
-import Footer from './Components/Layout/Footer/Footer';
+
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Auth from './Components/Auth';
@@ -21,7 +21,7 @@ function App() {
 
       </Switch>
 
-      <Footer />
+      
     </div>
   );
 }
